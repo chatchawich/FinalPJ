@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Student Development Task</title>
+    <link rel="icon" type="image/png" href="./img/psu-logo.png">
+    <meta name="description" content="Core HTML Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="./vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/lightcase/lightcase.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <!--Get your own code at fontawesome.com-->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
+	<div class="boxed-page">
+		<nav id="gtco-header-navbar" class="navbar navbar-expand-lg py-4">
+    <div class="container">
+        <a href="./index.html" class="navbar-brand">
+            <img src="./img/psu-full-logo.png" height="60" alt=""></a>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-nav-header">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">หน้าแรก</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./personnel.html">บุคลากร</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ทรานสคริปกิจกรรม
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="https://student.psu.ac.th/TS234/">ระบบทรานสคริปกิจกรรม</a>
+                      <a class="dropdown-item" href="https://transcript.psu.ac.th/">ระบบทรานสคริปกิจกรรมสำหรับนักศึกษารหัส 60</a>
+                      <a class="dropdown-item" href="https://activity.psu.ac.th/content/files/n125_ts.pdf">คู่มือปฏิบัติงาน กิจกรรมเสริมหลักสูตร</a>
+                    </div>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ข่าวสาร
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">ข่าวประชาสัมพันธ์</a>
+                        <a class="dropdown-item" href="#">ปฏิทินกิจกรรม</a>
+                        <a class="dropdown-item" href="./news.register.online.activity.html">สมัครกิจกรรมออนไลน์</a>
+                        <a class="dropdown-item" href="#">บทความ-ความรู้</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        เอกสาร
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">ประกาศ-ระเบียบ</a>
+                        <a class="dropdown-item" href="#">แบบฟอร์ม</a>
+                        <a class="dropdown-item" href="#">ตารางกิจกรรมประจำปีการศึกษา</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        องค์การนักศึกษา
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">องค์การบริหาร องค์การนักศึกษา</a>
+                        <a class="dropdown-item" href="#">สภานักศึกษา องค์การนักศึกษา</a>
+                        <a class="dropdown-item" href="#">ชมรมนักศึกษา</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ถาม-ตอบ
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">สารพันปัญหา</a>
+                        <a class="dropdown-item" href="#">คำถามที่พบบ่อย</a>
+                        <a class="dropdown-item" href="#">สื่อ</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        สื่อ
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">แกลอรี่</a>
+                        <a class="dropdown-item" href="#">วิดีโอ</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class='fas fa-id-badge' style='font-size:25px;color:red'></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="./login.html">Login</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    
+</nav>		
+<div class="jumbotron d-flex align-items-center" style="background-image: url(./img/pexels-cottonbro-4714774.jpg)">
+  <div class="container text-center">
+    <h1 class="display-2 mb-4">News calendar of Events
+    </h1>
+  </div>
+</div>
+
+<!-- Blog Section -->
+<section id="gtco-blog" class="bg-grey">
+<br>
+    <div class="col-md-12 blog-holder">
+        <div class="row">
+
+        <!-- Blog Item -->
+            <div class="col-md-12 blog-item-wrapper">
+                <div class="blog-item">
+                    <div class="blog-title">
+                        <a href="#"><h4>ค้นหากิจกรรม</h4></a>
+                    </div>
+                    <div id="content_view">
+
+                    <div class="title_view">ปฏิทินกิจกรรม กันยายน 2563</div>
+			            <div class="sub_path">
+                            <span class="home_path">
+                                <a href="/">หน้าแรก</a> » <i>ปฏิทินกิจกรรม กันยายน 2563</i>
+                            </span>
+                        </div>
+                        <div style="width:92%;margin:auto;margin-tobttom:50px;">
+                           ประจำเดือน: 
+                           <select name="q" id="q" onchange="window.location.href='/?q=event&amp;cal='+this.value;">
+                                <option value="08/2020">สิงหาคม 2563</option>
+                                <option value="09/2020" selected="">กันยายน 2563</option>
+                                <option value="10/2020">ตุลาคม 2563</option>
+                                <option value="11/2020">พฤศจิกายน 2563</option>
+                                <option value="12/2020">ธันวาคม 2563</option>
+                                <option value="01/2021">มกราคม 2564</option>
+                                <option value="02/2021">กุมพาพันธ์ 2564</option>
+                                <option value="03/2021">มีนาคม 2564</option>
+                                <option value="04/2021">เมษายน 2564</option>
+                                <option value="05/2021">พฤษภาคม 2564</option>
+                                <option value="06/2021">มิถุนายน 2564</option>
+                                <option value="07/2021">กรกฎาคม 2564</option>
+                        </select><ul id="all_event">
+                            <li class="eth">
+                            <span class="ethbetween">วันที่</span>
+                            <span class="ethtype">หมวดกิจกรรม</span>
+                            <span class="ethname">กิจกรรม / โครงการ</span>
+                            </li>
+                        <li style="background-color:#fcfcfc;">
+                            <span class="ebetween "><b>17 ก.ค. - 30 ก.ย. 63</b>
+                            <span class="etime">ตามกำหนดการ</span></span>
+                            <span class="etype"><b><i>ไม่ระบุ</i></b></span>
+                            <span class="type_event">[รับสมัครออนไลน์]<span><font color="red">เต็ม</font></span></span>
+                            <span class="ename"><a href="/?q=regist&amp;n=275">Backpacking Clip 2020 ฟิลิปปินส์ (Philippines) Y3</a>
+                            <span class="edivision">
+                            <span class="icodivision">กองกิจการนักศึกษา</span>
+                            <span class="icolocation">มหาวิทยาลัยสงขลานครินทร์</span></span></span>
+                        </li>
+                        <li style="background-color:#fff;">
+                            <span class="ebetween "><b>17 ก.ค. - 30 ก.ย. 63</b>
+                            <span class="etime">ตามกำหนดการ</span></span>
+                            <span class="etype"><b><i>ไม่ระบุ</i></b></span>
+                            <span class="type_event">[รับสมัครออนไลน์]<span><font color="red">เต็ม</font></span></span>
+                            <span class="ename"><a href="/?q=regist&amp;n=276">Backpacking Clip 2020 สิงคโปร์ (Singapore) Y3</a>
+                            <span class="edivision">
+                            <span class="icodivision">กองกิจการนักศึกษา</span>
+                            <span class="icolocation">มหาวิทยาลัยสงขลานครินทร์</span></span></span>
+                        </li>
+                        <li style="background-color:#fcfcfc;">
+                            <span class="ebetween "><b>17 ก.ค. - 30 ก.ย. 63</b>
+                            <span class="etime">ตามกำหนดการ</span></span>
+                            <span class="etype"><b><i>ไม่ระบุ</i></b></span>
+                            <span class="type_event">[รับสมัครออนไลน์]<span><font color="red">เต็ม</font></span></span>
+                            <span class="ename"><a href="/?q=regist&amp;n=277">Backpacking Clip 2020 เวียดนาม (Vietnam) Y3</a>
+                            <span class="edivision"><span class="icodivision">กองกิจการนักศึกษา</span>
+                            <span class="icolocation">มหาวิทยาลัยสงขลานครินทร์</span></span></span>
+                        </li>
+                        <li style="background-color:#fff;">
+                            <span class="ebetween "><b>17 ก.ค. - 30 ก.ย. 63</b>
+                            <span class="etime">ตามกำหนดการ</span></span>
+                            <span class="etype"><b><i>ไม่ระบุ</i></b></span>
+                            <span class="type_event">[รับสมัครออนไลน์]<span><font color="red">เต็ม</font></span></span>
+                            <span class="ename"><a href="/?q=regist&amp;n=274">Backpacking Clip 2020 พม่า (Myanmar) Y3</a>
+                            <span class="edivision"><span class="icodivision">กองกิจการนักศึกษา</span>
+                            <span class="icolocation">มหาวิทยาลัยสงขลานครินทร์</span></span></span>
+                        </li>
+                        <li style="background-color:#fcfcfc;">
+                            <span class="ebetween "><b>17 ก.ค. - 30 ก.ย. 63</b>
+                            <span class="etime">ตามกำหนดการ</span></span>
+                            <span class="etype"><b><i>ไม่ระบุ</i></b></span>
+                            <span class="type_event">[รับสมัครออนไลน์]<span><font color="red">เต็ม</font></span></span>
+                            <span class="ename"><a href="/?q=regist&amp;n=273">Backpacking Clip 2020 มาเลเซีย (Malaysia) Y3</a>
+                            <span class="edivision"><span class="icodivision">กองกิจการนักศึกษา</span>
+                            <span class="icolocation">มหาวิทยาลัยสงขลานครินทร์</span></span></span>
+                        </li>
+                        <li style="background-color:#fff;">
+                            <span class="ebetween "><b>17 ก.ค. - 30 ก.ย. 63</b>
+                            <span class="etime">ตามกำหนดการ</span></span>
+                            <span class="etype"><b><i>ไม่ระบุ</i></b></span>
+                            <span class="type_event">[รับสมัครออนไลน์]<span><font color="red">เต็ม</font></span></span>
+                            <span class="ename"><a href="/?q=regist&amp;n=272">Backpacking Clip 2020 ลาว (Laos) Y3</a>
+                            <span class="edivision"><span class="icodivision">กองกิจการนักศึกษา</span>
+                            <span class="icolocation">มหาวิทยาลัยสงขลานครินทร์</span></span></span>
+                        </li>
+                        <li style="background-color:#fcfcfc;">
+                            <span class="ebetween "><b>17 ก.ค. - 30 ก.ย. 63</b>
+                            <span class="etime">ตามกำหนดการ</span></span>
+                            <span class="etype"><b><i>ไม่ระบุ</i></b></span>
+                            <span class="type_event">[รับสมัครออนไลน์]<span><font color="red">เต็ม</font></span></span>
+                            <span class="ename"><a href="/?q=regist&amp;n=271">Backpacking Clip 2020 อินโดนีเซีย (Indonesia) Y3</a>
+                            <span class="edivision"><span class="icodivision">กองกิจการนักศึกษา</span>
+                            <span class="icolocation">มหาวิทยาลัยสงขลานครินทร์</span></span></span>
+                        </li>
+                        <li style="background-color:#fff;">
+                            <span class="ebetween "><b>17 ก.ค. - 30 ก.ย. 63</b>
+                            <span class="etime">ตามกำหนดการ</span></span>
+                            <span class="etype"><b><i>ไม่ระบุ</i></b></span>
+                            <span class="type_event">[รับสมัครออนไลน์]<span><font color="red">เต็ม</font></span></span>
+                            <span class="ename"><a href="/?q=regist&amp;n=270">Backpacking Clip 2020 กัมพูชา (Cambodia) Y3</a>
+                            <span class="edivision"><span class="icodivision">งานกิจกรรมนักศึกษา</span>
+                            <span class="icolocation">มหาวิทยาลัยสงขลานครินทร์</span></span></span>
+                        </li>
+                        <li style="background-color:#fcfcfc;">
+                            <span class="ebetween "><b>17 ก.ค. - 30 ก.ย. 63</b>
+                            <span class="etime">ตามกำหนดการ</span></span>
+                            <span class="etype"><b><i>ไม่ระบุ</i></b></span>
+                            <span class="type_event">[รับสมัครออนไลน์]<span><font color="red">เต็ม</font></span></span>
+                            <span class="ename"><a href="/?q=regist&amp;n=269">Backpacking Clip 2020 บรูไน ดารุสซาลาม (Brunei Darussalam) Y3</a>
+                            <span class="edivision"><span class="icodivision">งานกิจกรรมนักศึกษา</span>
+                            <span class="icolocation">มหาวิทยาลัยสงขลานครินทร์</span></span></span>
+                        </li>
+                        <li style="background-color:#fff;">
+                            <span class="ebetween "><b>24 ก.ย. 63</b>
+                            <span class="etime">10.00-12.00น.</span></span>
+                            <span class="etype"><b>บังคับเลือก</b><br> 3 ชั่วโมง</span>
+                            <span class="type_event">[รับสมัครออนไลน์]<span><font color="red">เต็ม</font></span></span>
+                            <span class="ename"><a href="/?q=regist&amp;n=282">ขอเชิญนักศึกษาเข้าร่วมกิจกรรมวันถือประโยชน์ของเพื่อนมนุษย์เป็นกิจที่หนึ่ง  (Y 2) จำนวน 3 หน่วยชม.</a>
+                            <span class="edivision"><span class="icodivision">กองพัฒนานักศึกษาและศิษย์เก่าสัมพันธ์</span>
+                            <span class="icolocation">ห้อง FMS 3409 (เลิศปัญญา) คณะวิทยาการจ..</span></span></span>
+                        </li>
+                        <li style="background-color:#fcfcfc;">
+                            <span class="ebetween "><b>26 ก.ย. 63</b>
+                            <span class="etime">15.00–16.30นรอบที่1วันที่26ก.ย.63</span></span>
+                            <span class="etype"><b>บังคับเลือก</b><br> 3 ชั่วโมง</span>
+                            <span class="type_event">[รับสมัครออนไลน์]<span><font color="red">เต็ม</font></span></span>
+                            <span class="ename"><a href="/?q=regist&amp;n=283">ขอเชิญนักศึกษาเข้าร่วมโครงการ  7th ASEAN Night “Health Promotion” (Y 3 จำนวน 3 ชม. รอบที่ 1 วันที่ 26 ก.ย.63 เวลา 15.00 – 16.30 น.)</a>
+                            <span class="edivision"><span class="icodivision">องค์การนักศึกษา</span><span class="icolocation">อาคารกิจกรรมนักศึกษา และลานกิจกรรมนักศ..</span></span></span>
+                        </li>
+                        <li style="background-color:#fff;"><span class="ebetween "><b>26 ก.ย. 63</b>
+                            <span class="etime">18.00–19.30น.)รอบที่3วันที่26ก.ย.63</span></span>
+                            <span class="etype"><b>บังคับเลือก</b><br> 3 ชั่วโมง</span>
+                            <span class="type_event">[รับสมัครออนไลน์]<span><font color="red">เต็ม</font></span></span>
+                            <span class="ename"><a href="/?q=regist&amp;n=285">ขอเชิญนักศึกษาเข้าร่วมโครงการ  7th ASEAN Night “Health Promotion” (Y 3 จำนวน 3 ชม. รอบที่ 3  วันที่ 26 ก.ย.63 เวลา 18.00 – 19.30 น.)</a>
+                            <span class="edivision"><span class="icodivision">องค์การบริหาร</span><span class="icolocation">อาคารกิจกรรมนักศึกษา และลานกิจกรรมนักศ..</span></span></span>
+                        </li>
+
+	
+<footer class="mastfoot mb-3 bg-white py-4 border-top">
+    <div class="inner container">
+         <div class="row">
+         	<div class="col-md-6 d-flex align-items-center justify-content-md-start justify-content-center">
+         		<p class="mb-0">&copy; 2020 All Right Reserved. Design by Administrative and Student Information Section </p>
+         	</div>
+           
+            <div class="col-md-6">
+            	<nav class="nav nav-mastfoot justify-content-md-end justify-content-center">
+	                <a class="nav-link" href="#">
+	                	<i class="icon-facebook"></i>
+	                </a>
+	                <a class="nav-link" href="#">
+	                	<i class="icon-twitter"></i>
+	                </a>
+	                <a class="nav-link" href="#">
+	                	<i class="icon-instagram"></i>
+	                </a>
+	                <a class="nav-link" href="#">
+	                	<i class="icon-youtube"></i>
+	                </a>
+	            </nav>
+            </div>
+            
+        </div>
+    </div>
+</footer>	</div>
+	
+</div>
+	<!-- External JS -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="./vendor/bootstrap/popper.min.js"></script>
+	<script src="./vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="./vendor/select2/select2.min.js "></script>
+	<script src="./vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="./vendor/isotope/isotope.min.js"></script>
+	<script src="./vendor/lightcase/lightcase.js"></script>
+	<script src="./vendor/waypoints/waypoint.min.js"></script>
+	<script src="./vendor/countTo/jquery.countTo.js"></script>
+
+	<!-- Main JS -->
+	<script src="./js/app.min.js "></script>
+	<script src="./localhost:35729/livereload.js"></script>
+</body>
+</html>
