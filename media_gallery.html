@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Student Development Task</title>
+    <meta name="description" content="Core HTML Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
+	<div class="boxed-page">
+		<nav id="gtco-header-navbar" class="navbar navbar-expand-lg py-4">
+    <div class="container">
+        <a href="./index.html" class="navbar-brand">
+            <img src="./img/psu-full-logo.png" height="60" alt=""></a>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-nav-header">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">หน้าแรก</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./personnel.html">บุคลากร</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ทรานสคริปกิจกรรม
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">ระบบทรานสคริปกิจกรรม</a>
+                      <a class="dropdown-item" href="#">ระบบทรานสคริปกิจกรรมสำหรับนักศึกษารหัส 60</a>
+                      <a class="dropdown-item" href="#">สมัครกิจกรรมออนไลน์</a>
+                      <a class="dropdown-item" href="#">คู่มือปฏิบัติงาน กิจกรรมเสริมหลักสูตร</a>
+                    </div>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ข่าวสาร
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">ข่าวประชาสัมพันธ์</a>
+                        <a class="dropdown-item" href="#">ปฏิทินกิจกรรม</a>
+                        <a class="dropdown-item" href="#">สมัครกิจกรรมออนไลน์</a>
+                        <a class="dropdown-item" href="#">บทความ-ความรู้</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        เอกสาร
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">ประกาศ-ระเบียบ</a>
+                        <a class="dropdown-item" href="#">แบบฟอร์ม</a>
+                        <a class="dropdown-item" href="#">ตารางกิจกรรมประจำปีการศึกษา</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        องค์การนักศึกษา
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">องค์การบริหาร องค์การนักศึกษา</a>
+                        <a class="dropdown-item" href="#">สภานักศึกษา องค์การนักศึกษา</a>
+                        <a class="dropdown-item" href="#">ชมรมนักศึกษา</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ถาม-ตอบ
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">สารพันปัญหา</a>
+                        <a class="dropdown-item" href="#">คำถามที่พบบ่อย</a>
+                        <a class="dropdown-item" href="#">สื่อ</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="media_gallery.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        สื่อ
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="media_gallery.html">แกลอรี่</a>
+                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</nav>		
+<div class="jumbotron d-flex align-items-center" style="background-image: url(img/gallery.jpg)">
+  <div class="container text-center">
+    <h1 class="display-2 mb-4">GALLERY</h1>
+    
+  </div>
+</div>		<section id="gtco-who-we-are" class="bg-white">
+    
+<section id="gtco-blog" class="bg-grey">
+    <div class="container">
+        <div class="section-content">
+            <div class="title-wrap mb-5">
+                <h2 class="section-title">ภาพกิจกรรม</b></h2>
+                <p class="section-sub-title"></p>
+            </div>
+            <div class="row">
+                <!-- Blog -->
+                <div class="col-md-12 blog-holder">
+                    <div class="row">
+                        <!-- Blog Item -->
+                        <div class="col-md-4 blog-item-wrapper">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <img src="https://activity.psu.ac.th/photo/files/p54_7.jpg" alt=""></a>
+                                </div>
+                                <div class="blog-text">
+                                    <div class="blog-tag">
+                                        <a href="https://www.facebook.com/StudentAffairs.PSU/photos"><h6><small>ดูภาพรวมกิจกรรม</small></h6></a>
+                                    </div>
+                                    <div class="blog-title">
+                                        <h4>โครงการ เตรียมความพร้อมสู่วัยทำงาน Getting Ready for a Career</h4></a>
+                                    </div>
+                                    <div class="blog-meta">
+                                        <p class="blog-date">เมื่อวันที่ 23 ตุลาคม 2563</p> 
+                                        
+                                    </div>
+                                    <div class="blog-desc">
+                                        <p>โดยมีวัตถุประสงค์เพื่อเตรียมความพร้อมนักศึกษาสู่ โลกแห่งการทำงาน เปิดมุมมองของนักศึกษาสู่โลกแห่งอาชีพ พัฒนาบุคลิกภาพ และคุณธรรมจริยธรรมก่อนเข้าสู่การทำงาน และเพื่อป้องกันการแพร่ระบาดโรคไวรัส (COVID-19) </p>
+                                    </div>
+                            
+                                    <div class="blog-share-wrapper">
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-twitter-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Blog Item -->
+                        <!-- Blog Item -->
+                        <div class="col-md-4 blog-item-wrapper">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <a href="#"><img src="https://activity.psu.ac.th/photo/files/p50_c074e8b870ed7dac4020742fd6a44eb5e_42981058_200422_0135.jpg" alt=""></a>
+                                </div>
+                                <div class="blog-text">
+                                    <div class="blog-tag">
+                                        <a href="https://www.facebook.com/StudentAffairs.PSU/photos"><h6><small>ดูภาพรวมกิจกรรม</small></h6></a>
+                                    </div>
+                                    <div class="blog-title">
+                                        <h4>กิจกรรมเพื่อเพื่อนมนุษย์เนื่องในวันสถาปนามหาวิทยาลัยสงขลานครินทร์</h4></a>
+                                    </div>
+                                    <div class="blog-meta">
+                                        <p class="blog-date">เมื่อวันที่13 มีนาคม 2563</p> 
+                                    </div>
+                                    <div class="blog-desc">
+                                        <p>โดยประกอบด้วยกิจกรรมรับบริจาคโลหิตเพื่อช่วยเหลือเพื่อนมนุษย์ และจัดกิจกรรมจำหน่ายสินค้ามือสองเพื่อนำรายได้บริจาคช่วยเหลือผู้ป่วยโรงพยาบาลสงขลานครินทร์ </p>
+                                    </div>
+                                    
+                                    <div class="blog-share-wrapper">
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-twitter-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Blog Item -->
+                        <!-- Blog Item -->
+                        <div class="col-md-4 blog-item-wrapper">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <img src="https://activity.psu.ac.th/photo/files/p47_67508758_2580059108692289_7196541360298524672_o.jpg" alt=""></a>
+                                </div>
+                                <div class="blog-text">
+                                    <div class="blog-tag">
+                                        <a href="https://www.facebook.com/StudentAffairs.PSU/photos"><h6><small>ดูภาพรวมกิจกรรม</small></h6></a>
+                                    </div>
+                                    <div class="blog-title">
+                                        <h4>โครงการปฐมนิเทศและเตรียมความพร้อมทางวิชาการสำหรับนักศึกษาใหม่ ประจำปีการศึกษา 2562</h4></a>
+                                    </div>
+                                    <div class="blog-meta">
+                                        <p class="blog-date">เมื่อวันที่ 30 กรกฎาคม – 1 สิงหาคม 2562</p> 
+                                        
+                                    </div>
+                                    <div class="blog-desc">
+                                        <p>การจัดปฐมนิเทศนักศึกษา (Orientation) ให้นักศึกษาใหม่เป็นกิจกรรมที่สำคัญและถือเป็นภารกิจหนึ่งที่สถาบันอุดมศึกษาทุกแห่งจะต้องจัดให้แก่นักศึกษาใหม่</p>
+                                    </div>
+                                    
+                                    <div class="blog-share-wrapper">
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-twitter-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Blog Item -->
+                    </div>
+                </div>
+                <!-- End of Blog -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Blog Section -->		<!-- Portfolio Section -->
+<section id="gtco-blog" class="bg-grey">
+    <div class="container">
+        <div class="section-content">
+            <div class="title-wrap mb-5">
+                <h2 class="section-title">วิดีโอแนะนำ</h2>
+                <p class="section-sub-title"></p>
+            </div>
+            <div class="row">
+                <!-- Blog -->
+                <div class="col-md-12 blog-holder">
+                    <div class="row">
+                        <!-- Blog Item -->
+                        <div class="col-md-4 blog-item-wrapper">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <iframe width="300" height="300" src="https://www.youtube.com/embed/dPpwO5W9DNY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="blog-text">
+                                    <div class="blog-tag">
+                                        <a href="https://www.youtube.com/watch?v=dPpwO5W9DNY&ab_channel=%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B8%E0%B8%A1.%E0%B8%AD.%E0%B8%AB%E0%B8%B2%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88FM88.0Mhz"><h6><small>ดูวิดีโอ</small></h6></a>
+                                    </div>
+                                    <div class="blog-title">
+                                        <h4>หลงรักมหาวิทยาลัยสงขลานครินทร์</h4></a>
+                                    </div>
+                                    
+                            
+                                    <div class="blog-share-wrapper">
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-twitter-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Blog Item -->
+                        <!-- Blog Item -->
+                        <div class="col-md-4 blog-item-wrapper">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <iframe width="300" height="300" src="https://www.youtube.com/embed/jy121RGChiI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="blog-text">
+                                    <div class="blog-tag">
+                                        <a href="https://www.youtube.com/watch?v=jy121RGChiI&feature&hd=1&ab_channel=TransScriptsStudentactivities"><h6><small>ดูวิดีโอ</small></h6></a>
+                                    </div>
+                                    <div class="blog-title">
+                                        <h4>โครงการบัณฑิตยุคใหม่ ไม่ทุจริตคอรัปชั่น ep.1</h4></a>
+                                    </div>
+                                    
+                                    
+                                    <div class="blog-share-wrapper">
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-twitter-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Blog Item -->
+                        <!-- Blog Item -->
+                        <div class="col-md-4 blog-item-wrapper">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <iframe width="300" height="300" src="https://www.youtube.com/embed/wT0Ah4ilkNs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="blog-text">
+                                    <div class="blog-tag">
+                                        <a href="https://www.youtube.com/watch?v=wT0Ah4ilkNs&feature=youtu.be&hd=1&ab_channel=TransScriptsStudentactivities"><h6><small>ดูวิดีโอ</small></h6></a>
+                                    </div>
+                                    <div class="blog-title">
+                                        <h4>โครงการบัณฑิตยุคใหม่ ไม่ทุจริตคอรัปชั่น ep.2</h4></a>
+                                    </div>
+                                    
+                                    <div class="blog-share-wrapper">
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-twitter-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Blog Item -->
+                    </div>
+                </div>
+                <!-- End of Blog -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Blog Section -->		<!-- Portfolio Section -->
+<section id="gtco-portfolio" class="bg-white">
+    <div class="container">
+        <div class="section-content">
+            <!-- Section Title -->
+            <div class="title-wrap">
+                <h2 class="section-title">ประมวลภาพกิจกรรม</h2>
+                <p class="section-sub-title">งานพัฒนานักศึกษา กองพัฒนานักศึกษา มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตหาดใหญ่</p>
+            </div>
+            <!-- End of Section Title -->
+            <div class="row">
+                <!-- Portfolio Holder -->
+                <div class="col-md-12 portfolio-holder">
+                    <!-- Btn Filter -->
+                    <!-- End of Btn Filter -->
+                    <!-- Portfolio Content -->
+                    <div class="grid-portfolio">
+                        <div class="grid-sizer"></div>
+                        <div class="gutter-sizer"></div>
+                        <!-- Portfolio Item -->
+                        <div class="grid-item minimalism">
+                            <div class="grid-item-wrapper">
+                                <img src="img/g1.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/g1.jpg" title="Photo-1">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item vintage">
+                            <div class="grid-item-wrapper">
+                                <img src="img/g2.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/g2.jpg" title="Ship">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item creative grid-item-height">
+                            <div class="grid-item-wrapper">
+                                <img src="img/g3.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/g3.jpg" title="Tracy Portrait">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item creative">
+                            <div class="grid-item-wrapper">
+                                <img src="img/g4.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/g4.jpg" title="Guitar">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <!-- <div class="grid-item minimalism">
+                            <div class="grid-item-wrapper">
+                                <img src="img/photo-3.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/photo-3.jpg" title="Clock">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4>Clock</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> -->
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item vintage">
+                            <div class="grid-item-wrapper">
+                                <img src="img/g5.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/g5.jpg" title="Bookself">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item creative">
+                            <div class="grid-item-wrapper">
+                                <img src="img/g7.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/g7.jpg" title="Guitar">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item creative">
+                            <div class="grid-item-wrapper">
+                                <img src="img/g8.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/g8.jpg" title="Guitar">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item creative">
+                            <div class="grid-item-wrapper">
+                                <img src="img/g9.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/g9.jpg" title="Guitar">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item creative">
+                            <div class="grid-item-wrapper">
+                                <img src="img/g10.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/g10.jpg" title="Guitar">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item creative">
+                            <div class="grid-item-wrapper">
+                                <img src="img/g6.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/g6.jpg" title="Guitar">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                    </div>
+                    <!-- End of Portfolio Content -->
+                </div>
+                <!-- End of Portfolio Holder -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Portfolio Section -->		<section id="gtco-pricing" class="bg-grey">
+    <div class="container">
+        <div class="section-content">
+             <!-- Section Title -->
+            <div class="title-wrap">
+                <h2 class="section-title">กิจกรรมที่จะมาถึง</h2>
+                <p class="section-sub-title">กิจกรรมที่จะเปิดรับสมัครในเร็ว ๆ นี้</p>
+            </div>
+            <!-- End of Section Title -->
+            <div class="card-deck mb-3 text-center">
+                <div class="price-box card mb-4 box-shadow">
+                    <div class="card-header p-4">
+                        <h6 class="mb-0 text-orange font-weight-bold">ขอเชิญนักศึกษาร่วมบริจาคโลหิต</h6>
+                        
+                    </div>
+                    <div class="card-body p-4">
+                        <ul class="price-box-list list-unstyled mt-3 mb-4">
+                            <li>จิตสำนึกสาธารณะฯ จำนวน 2 หน่วยชม.</li>
+                            <img src="https://activity.psu.ac.th/content/files/n639_%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%89.jpg" alt="portfolio-img" class="portfolio-item">
+                           
+                        </ul>
+                
+                        <a href="#" class="btn btn-block btn-secondary btn-orange mt-4">สนใจเข้าร่วมกิจกรรม</a>
+                    </div>
+                </div>
+                <div class="price-box card mb-4 box-shadow">
+                    <div class="card-header p-4">
+                        <h6 class="mb-0 text-cyan font-weight-bold">ขอเชิญนักศึกษาเข้าร่วมโครงการจุดประกายความเป็นผู้ประกอบการ ครั้งที่ 1</h6>
+                        <h2 class="display-4 p-2 mb-0 font-weight-bold">100 คน</h2>
+                       
+                    </div>
+                    <div class="card-body p-4">
+                        <ul class="price-box-list list-unstyled mt-3 mb-4">
+                            <li>เลือกเข้าร่วม 9 ชั่วโมง</li>
+                            <img src="https://activity.psu.ac.th/content/files/r293_Digital%20Marketing.jpg" alt="portfolio-img" class="portfolio-item">
+                        </ul>
+                    
+                        <br><br><br><br><a href="#" class="btn btn-block btn-secondary btn-cyan mt-4">สนใจเข้าร่วมกิจกรรม</a>
+                    </div>
+                </div>
+                <div class="price-box card mb-4 box-shadow">
+                    <div class="card-header p-4">
+                        <h6 class="mb-0 text-red font-weight-bold">PSU ห่วงใยใส่ใจสุขภาพ ตอน I เข็ด YOU เก็ท ม้าย</h6>
+                        <h2 class="display-4 p-2 mb-0 font-weight-bold">120 คน</h2>
+                        
+                    </div>
+                    <div class="card-body p-4">
+                        <ul class="price-box-list list-unstyled mt-3 mb-4">
+                            <li>เลือกเข้าร่วม 3 ชั่วโมง</li>
+                            <img src="https://activity.psu.ac.th/content/files/r291_1.png" alt="portfolio-img" class="portfolio-item">
+                        </ul>
+                        <br><br><br><a href="#" class="btn btn-block btn-secondary btn-red mt-4">สนใจเข้าร่วมกิจกรรม</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /END PRICING -->
+</section>		<!-- Client Section -->
+
+	
+</div>
+	<!-- External JS -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="vendor/bootstrap/popper.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js "></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="vendor/isotope/isotope.min.js"></script>
+	<script src="vendor/lightcase/lightcase.js"></script>
+	<script src="vendor/waypoints/waypoint.min.js"></script>
+	<script src="vendor/countTo/jquery.countTo.js"></script>
+
+	<!-- Main JS -->
+	<script src="js/app.min.js "></script>
+	<script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>
