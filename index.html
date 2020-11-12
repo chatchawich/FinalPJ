@@ -29,6 +29,10 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
+    <!-- Photo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/lib/w3.css">
+
 </head>
 <body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
 	<div class="boxed-page">
@@ -113,9 +117,56 @@
         </MARQUEE>Student Development Task<MARQUEE scrollAmount=1 direction=right width="2%"> | | | </MARQUEE> <MARQUEE behavior=alternate direction=right scrollAmount=3 width="4%"> <font face=Webdings> >>> </font> </MARQUEE>
     </h1>
   </div>
-</div>		<section id="gtco-who-we-are" class="bg-white">
+</div>		
+<section id="gtco-who-we-are" class="bg-white">
     <div class="container">
         <div class="section-content">
+
+            <div class="w3-content" style="max-width:500px;position:relative">
+                <div class="w3-display-container mySlides">
+                  <img src="https://activity.psu.ac.th/content/files/n634_Y4_feee.png" style="width:100%">
+                  <div class="w3-display-bottomleft w3-large w3-container w3-padding-hor-16 w3-black">
+                        ขอเชิญชวนนักศึกษาชั้นปีที่ 4 เข้าร่วมกิจกรรมเตรียมความพร้อมสู่วัยทำงาน (Y4)
+                  </div>
+                </div>
+                <div class="w3-display-container mySlides">
+                    <img src="https://activity.psu.ac.th/content/files/n637_120092322.png" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-hor-16 w3-black">
+                        กำหนดส่งรายงานโครงการ Backpacking Trip
+                    </div>
+                  </div>
+                <div class="w3-display-container mySlides">
+                  <img src="https://activity.psu.ac.th/content/files/n639_%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%89.jpg" style="width:100%">
+                  <div class="w3-display-bottomleft w3-large w3-container w3-padding-hor-16 w3-black">
+                        ขอเชิญนักศึกษาร่วมบริจาคโลหิต (จิตสำนึกสาธารณะฯ จำนวน 2 หน่วยชม.)
+                  </div>
+                </div>
+                <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:52%;left:0" onclick="plusDivs(-2)">❮</a>
+                <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:52%;right:0" onclick="plusDivs(2)">❯</a>
+                
+            </div>
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = x.length} ;
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+                </script>
+                
+
+
             <div class="title-wrap">
                 <h2 class="section-title">The easiest way <br>to build<b> websites online</b></h2>
                 <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a <br> pharetra augue. Donec id elit non mi porta gravida at eget metus.</p>
