@@ -24,13 +24,28 @@
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
+    
     <!--Get your own code at fontawesome.com-->
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
+    
 </head>
+
 <body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
+
+
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="/__/firebase/8.2.2/firebase-app.js"></script>
+
+            <!-- TODO: Add SDKs for Firebase products that you want to use
+                https://firebase.google.com/docs/web/setup#available-libraries -->
+            <script src="/__/firebase/8.2.2/firebase-analytics.js"></script>
+
+            <!-- Initialize Firebase -->
+            <script src="/__/firebase/init.js"></script>
+
+
 	<div class="boxed-page">
 		<nav id="gtco-header-navbar" class="navbar navbar-expand-lg py-4">
     <div class="container">
@@ -107,132 +122,69 @@
         </div>
     </div>    
 </nav>
-<div class="jumbotron d-flex align-items-center" style="background-image: url(./img/news_.jpg)">
-  <div class="container text-center">
-    <h1 class="display-2 mb-4">News release</h1>
-  </div>
-</div>		
 
-<!-- Features Section-->
-<section id="gtco-features" class="bg-white">
-    <div class="container">
-        <div class="section-content">
-            <!-- Section Title -->
-            <div class="title-wrap">
-                <h2 class="section-title">
-                    ข่าวประชาสัมพันธ์
-                </h2>
-            </div>
-            <!-- End of Section Title -->
-            <div class="row">
-                <!-- Features Holder-->
-                <div class="col-md-12 features-holder">
-                    <div class="row">
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-6 feature-item item mb-3 mb-3 text-center">
-                            <div class="my-4">
-                                <img src="https://activity.psu.ac.th/img.php?src=content/thumb/n640.jpg&w=170&h=90&q=80&a=t" width="250">
-                            </div>
-                            <h4>กิจกรรม My Journey ประสบการณ์ดีดีที่ต่างแดน</h4>
-                            <p>( Y 3 จำนวน 6 หน่วยชม.)</p>
+<div class="jumbotron d-flex align-items-center" style="background-image: url(./img/psu.jpg)">
+    <div class="container text-center">
+
+    <!-- Blog -->
+    <div class="col-md-12 blog-holder">
+        <div class="row">
+            <!-- Blog Item -->
+            <div class="col-md-4 blog-item-wrapper">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <a href="#"><img src="./icons/Student Development Task.gif" alt=""></a>
+                    </div>
+                    <div class="blog-text">
+                        <div class="form-popup" id="myForm">
                         </div>
-                        <!-- End of Feature Item -->
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
-                            <div class="my-4">
-                                <img src="https://activity.psu.ac.th/img.php?src=content/thumb/n639.jpg&w=170&h=90&q=80&a=t" width="250">
-                            </div>
-                            <h4>ขอเชิญนักศึกษาร่วมบริจาคโลหิต</h4>
-                            <p>(จิตสำนึกสาธารณะฯ จำนวน 2 หน่วยชม.)</p>
-                        </div>
-                        <!-- End of Feature Item -->
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
-                            <div class="my-4">
-                                <img src="https://activity.psu.ac.th/img.php?src=content/thumb/n638.png&w=170&h=90&q=80&a=t" width="250">
-                            </div>
-                            <h4>ตรวจสอบรายชื่อการเข้าร่วมกิจกรรม</h4>
-                            <p>จัดโดยส่วนกลาง ประจำเดือน ส.ค.-ก.ย. 63</p>
-                        </div>
-                        <!-- End of Feature Item -->
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
-                            <div class="my-4">
-                                <img src="https://activity.psu.ac.th/img.php?src=content/thumb/n637.png&w=170&h=90&q=80&a=t" width="250">
-                            </div>
-                            <h4>กำหนดส่งรายงานโครงการ</h4>
-                            <p>Backpacking Trip</p>
-                        </div>
-                        <!-- End of Feature Item -->
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
-                            <div class="my-4">
-                                <img src="https://activity.psu.ac.th/img.php?src=content/thumb/n636.jpg&w=170&h=90&q=80&a=t" width="250">
-                            </div>
-                            <h4>เชิญเข้าร่วมประกวดสุนทรพจน์เยาวชนอาเซียน</h4>
-                            <p>"พอเพียง ยั่งยืน เพื่อโลก"</p>
-                        </div>
-                        <!-- End of Feature Item -->
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
-                            <div class="my-4">
-                                <img src="https://activity.psu.ac.th/img.php?src=content/thumb/n635.jpg&w=170&h=90&q=80&a=t" width="250">
-                            </div>
-                            <h4>ขอเชิญนักศึกษาร่วมบริจาคโลหิต</h4>
-                            <p>(จิตสำนึกสาธารณะฯ จำนวน 2 หน่วยชม.)</p>
-                        </div>
-                        <!-- End of Feature Item -->
                     </div>
                 </div>
-                <!-- End of Features Holder-->
             </div>
-        </div>
-    </div>
-</section>
-<!-- End of Features Section-->		
-	
-<footer class="mastfoot mb-3 bg-white py-4 border-top">
-    <div class="inner container">
-         <div class="row">
-         	<div class="col-md-6 d-flex align-items-center justify-content-md-start justify-content-center">
-         		<p class="mb-0">&copy; 2020 All Right Reserved. Design by Administrative and Student Information Section </p>
-         	</div>
-           
-            <div class="col-md-6">
-            	<nav class="nav nav-mastfoot justify-content-md-end justify-content-center">
-	                <a class="nav-link" href="#">
-	                	<i class="icon-facebook"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="icon-twitter"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="icon-instagram"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="icon-youtube"></i>
-	                </a>
-	            </nav>
+            <!-- End of Blog Item -->
+            <!-- Blog Item -->
+            <div class="col-md-8 blog-item-wrapper">
+                <div class="blog-item">
+                    <div class="blog-text">
+                        <div class="form-popup" id="myForm">
+                            <form action="#" class="form-container">
+                              <h1>Login</h1><br>
+                          
+                              <label for="email"><b>Email&nbsp; &nbsp; &nbsp; &nbsp;</b></label> 
+                              <input type="text" placeholder="Enter Email" name="email" required> <br><br>
+                          
+                              <label for="psw"><b>Password</b></label>
+                              <input type="password" placeholder="Enter Password" name="psw" required> <br><br>
+                          
+                              <button type="submit" class="btn">
+                                  <a href=" ">Login</a>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- End of Blog Item -->
             
         </div>
-    </div>
-</footer>	</div>
-	
-</div>
-	<!-- External JS -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-	<script src="./vendor/bootstrap/popper.min.js"></script>
-	<script src="./vendor/bootstrap/bootstrap.min.js"></script>
-	<script src="./vendor/select2/select2.min.js "></script>
-	<script src="./vendor/owlcarousel/owl.carousel.min.js"></script>
-	<script src="./vendor/isotope/isotope.min.js"></script>
-	<script src="./vendor/lightcase/lightcase.js"></script>
-	<script src="./vendor/waypoints/waypoint.min.js"></script>
-	<script src="./vendor/countTo/jquery.countTo.js"></script>
+    </div> 
+  </div>
 
-	<!-- Main JS -->
-	<script src="./js/app.min.js "></script>
-	<script src="./localhost:35729/livereload.js"></script>
-</body>
-</html>
+      
+  </div>
+      <!-- External JS -->
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+      <script src="./vendor/bootstrap/popper.min.js"></script>
+      <script src="./vendor/bootstrap/bootstrap.min.js"></script>
+      <script src="./vendor/select2/select2.min.js "></script>
+      <script src="./vendor/owlcarousel/owl.carousel.min.js"></script>
+      <script src="./vendor/isotope/isotope.min.js"></script>
+      <script src="./vendor/lightcase/lightcase.js"></script>
+      <script src="./vendor/waypoints/waypoint.min.js"></script>
+      <script src="./vendor/countTo/jquery.countTo.js"></script>
+  
+      <!-- Main JS -->
+      <script src="./js/app.min.js "></script>
+      <script src="./localhost:35729/livereload.js"></script>
+  </body>
+  </html>
