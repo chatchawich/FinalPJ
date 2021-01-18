@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Student Development Task</title>
+    <link rel="icon" type="image/png" href="./img/psu-logo.png">
+    <meta name="description" content="Core HTML Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="./vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/lightcase/lightcase.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <!--Get your own code at fontawesome.com-->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
+	<div class="boxed-page">
+		<nav id="gtco-header-navbar" class="navbar navbar-expand-lg py-4">
+    <div class="container">
+        <a href="./index.html" class="navbar-brand">
+            <img src="./img/psu-full-logo.png" height="60" alt=""></a>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-nav-header">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">หน้าแรก</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./personnel.html">บุคลากร</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ทรานสคริปกิจกรรม
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="https://student.psu.ac.th/TS234/">ระบบทรานสคริปกิจกรรม</a>
+                      <a class="dropdown-item" href="https://transcript.psu.ac.th/">ระบบทรานสคริปกิจกรรมสำหรับนักศึกษารหัส 60</a>
+                      <a class="dropdown-item" href="https://activity.psu.ac.th/content/files/n125_ts.pdf">คู่มือปฏิบัติงาน กิจกรรมเสริมหลักสูตร</a>
+                    </div>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ข่าวสาร
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">ข่าวประชาสัมพันธ์</a>
+                        <a class="dropdown-item" href="#">ปฏิทินกิจกรรม</a>
+                        <a class="dropdown-item" href="">สมัครกิจกรรมออนไลน์</a>
+                        <a class="dropdown-item" href="#">บทความ-ความรู้</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        เอกสาร
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">ประกาศ-ระเบียบ</a>
+                        <a class="dropdown-item" href="#">แบบฟอร์ม</a>
+                        <a class="dropdown-item" href="#">ตารางกิจกรรมประจำปีการศึกษา</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        องค์การนักศึกษา
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">องค์การบริหาร องค์การนักศึกษา</a>
+                        <a class="dropdown-item" href="#">สภานักศึกษา องค์การนักศึกษา</a>
+                        <a class="dropdown-item" href="#">ชมรมนักศึกษา</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ถาม-ตอบ
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">สารพันปัญหา</a>
+                        <a class="dropdown-item" href="#">คำถามที่พบบ่อย</a>
+                        <a class="dropdown-item" href="#">สื่อ</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        สื่อ
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="media_gallery.html">แกลอรี่</a>
+                      
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class='fas fa-id-badge' style='font-size:25px;color:red'></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="login.html">Login</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    
+</nav>		
+<div class="jumbotron d-flex align-items-center" style="background-image: url(./img/recruit.webp)">
+  <div class="container text-center">
+    <h1 class="display-2 mb-4"><MARQUEE behavior=alternate direction=left scrollAmount=3 width="4%"> <font face=Webdings> <<< </font> </MARQUEE> <MARQUEE scrollAmount=1 direction=left width="2%"> 
+        <br> </MARQUEE>เปิดรับสมัครกิจกรรมt<MARQUEE scrollAmount=1 direction=right width="2%"> | | | </MARQUEE> <MARQUEE behavior=alternate direction=right scrollAmount=3 width="4%"> <font face=Webdings> >>> </font> </MARQUEE><br>| | |     
+        </MARQUEE>Recruit<MARQUEE scrollAmount=1 direction=right width="2%"> | | | </MARQUEE> <MARQUEE behavior=alternate direction=right scrollAmount=3 width="4%"> <font face=Webdings> >>> </font> </MARQUEE>
+    </h1>
+  </div>
+</div>		<section id="gtco-who-we-are" class="bg-white">
+    <div class="container">
+        <div class="section-content">
+            <table width="100%" border="4" class="table table-bordered" bgcolor ='#ffccff' Style="font-size: 15px;">
+<tr>
+            <td><center><lable>แบบฟอร์มรับสมัครกิจกรรม</lable></center></td>
+</tr>            
+            <tr><td ><lable for="name">ชื่อโครงการ</lable>
+                <input style="text" id="name" >
+                <br><br><lable for="date">วันที่เริ่มโครงการ</lable>
+                <input style="text" id="date" >
+                <br><br><lable for="date">วันที่สิ้นสุดโครงการ</lable>
+                <input style="text" id="date" >
+                <br><br><lable for="location">สถานที่</lable>
+                <input style="text" id="location" >
+                <br><br><lable for="people">จำนวนนักศึกษา</lable>
+                <input style="text" id="people" > &emsp;คน
+                &emsp;<input type="radio" name="people" >กำหนดสัดส่วนคณะ
+                <br><br><lable for="people">&emsp;&emsp;&emsp;- คณะ</lable>
+                <input style="text" id="people" > &emsp;คน
+                <br><br><lable for="people">&emsp;&emsp;&emsp;- คณะ</lable>
+                <input style="text" id="people" > &emsp;คน
+                <br><br><lable for="activity">ลักษณะกิจกรรม</lable>
+                <input style="text" id="activity" >
+                <br><br><lable for="activity">ประเภทกิจกรรม</lable>&emsp;กิจกรรมมหาวิทยาลัย
+                <input type="radio" name="activity" >Y1
+            <input type="radio" name="activity" > Y2
+            <input type="radio" name="activity" > Y3
+            <input type="radio" name="activity" > Y4
+                <b><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;กิจกรรมเลือกเข้าร่วม
+                <select id="ac2">
+                    <option value="..."></option>
+                    <option value="1">กิจกรรมเสริมสร้างจิตสำนึกสาธารณะและบำเพ็ญประโยชน์ </option>
+                    <option value="2">กิจกรรมเสริมสร้างความซื่อสัตย์มีวินัย คุณธรรมจริยธรรม </option>
+                    <option value="3">กิจกรรมเสริมสร้างสติปัญญา ทักษะทางสังคม ทักษะวิชาการ และวิชาชีพ</option>
+                    <option value="4">กิจกรรมส่งเสริมศิลปวัฒนธรรมและศาสนา</option>
+                </section></p></b>
+                <br><center>
+                    <input type="submit"></tnput>
+                    <input type="reset"></center>
+               
+               </td> </tr>   
+              </table>
+           
+            
+          
+
+	<!-- External JS -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="./vendor/bootstrap/popper.min.js"></script>
+	<script src="./vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="./vendor/select2/select2.min.js "></script>
+	<script src="./vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="./vendor/isotope/isotope.min.js"></script>
+	<script src="./vendor/lightcase/lightcase.js"></script>
+	<script src="./vendor/waypoints/waypoint.min.js"></script>
+	<script src="./vendor/countTo/jquery.countTo.js"></script>
+
+	<!-- Main JS -->
+	<script src="./js/app.min.js "></script>
+	<script src="./localhost:35729/livereload.js"></script>
+</body>
+</html>
