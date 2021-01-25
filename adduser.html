@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <title>activity</title>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+<style>
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    ul {
+        padding: 3rem;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px rgba(0, 0,0, 0.1);
+    }
+    span {
+        display: block;
+    }
+
+</style>
+
+    </head>
+    <body><center>
+        <table><tbody><tr><td><div style="border:3px double #BDB76B ;background: #EEE8AA ">
+            <div style="border-left:7px solid #fff;border-right:7px solid #fff;background: #EEE8AA ;margin:0px 5px"><div style="background:#fffff;margin:0px5px"> <table><tbody><tr><td><div style="font-size:12px; width:350; padding-left:5px; padding-right:5px; padding-top:10px; padding-bottom:10px">
+         
+        <div class="container">
+            <h1>Activity</h1>
+            <form id="addActivity"> 
+                <b><p>ชื่อ-นามสกุล<input type="text" name="name" placeholder="addname"></p></b>
+                <b><p>รหัสนักศึกษา<input type="text" name="code" placeholder="addcode"></p></b>
+                <b><p>ชั้นปีการศึกษา</b>
+                <select id="year">
+                    <option value="..."></option>
+                    <option value="y1">ปี1</option>
+                    <option value="y2">ปี2</option>
+                    <option value="y3">ปี3</option>
+                    <option value="y4">ปี4</option></select></p> 
+                <b><p>คณะ</b>
+                <select id="faculty">
+                    <option value="..."></option>
+                    <option value="คณะวิทยาศาสตร์">คณะวิทยาศาสตร์</option>
+                    <option value="คณะทรัพยากรธรรมชาติ">คณะทรัพยากรธรรมชาติ</option>
+                    <option value="คณะอุตสาหกรรมเกษตร">คณะอุตสาหกรรมเกษตร</option>
+                    <option value="คณะแพทยศาสตร์">คณะแพทยศาสตร์</option>
+                    <option value="คณะพยาบาลศาสตร์">คณะพยาบาลศาสตร์</option>
+                    <option value="คณะเทคนิคการแพทย์">คณะเทคนิคการแพทย์</option>
+                    <option value="โครงการจัดตั้งวิทยาลัยนานาชาติ">โครงการจัดตั้งวิทยาลัยนานาชาติ</option>
+                    <option value="โครงการจัดตั้งคณะสัตวแพทยศาสตร์">โครงการจัดตั้งคณะสัตวแพทยศาสตร์</option>
+                    <option value="คณะทันตแพทยศาสตร์">คณะทันตแพทยศาสตร์</option>
+                    <option value="คณะวิศวกรรมศาสตร์">คณะวิศวกรรมศาสตร์</option>
+                    <option value="คณะเภสัชศาสตร์">คณะเภสัชศาสตร์</option>
+                    <option value="คณะวิทยาการจัดการ">คณะวิทยาการจัดการ</option>
+                    <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+                    <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+                    <option value="คณะนิติศาสตร์">คณะนิติศาสตร์</option>
+                    <option value="คณะการแพทย์แผนไทย">คณะการแพทย์แผนไทย</option>
+                </select></p>
+                <b><p>โครงการ</b>
+                    <select id="project">
+                        <option value="..."></option>
+                        <option value="เข้าร่วมบริจาคเลือด">เข้าร่วมบริจาคเลือด</option>
+                        <option value="จุดประกายความเป็นผู้ประกอบการครั้งที่1">จุดประกายความเป็นผู้ประกอบการครั้งที่1</option>
+                        <option value="PSU ห่วงใยใส่ใจสุขภาพ ตอน I เข็ด YOU เก็ท ม้าย">PSU ห่วงใยใส่ใจสุขภาพ ตอน I เข็ด YOU เก็ท ม้าย</option>
+                        </select></p> 
+                
+                <button>Add</button>
+
+            </form></font></div></td></tr></tbody></table></div></div></div></td></tr></tbody></table></center> </div>
+            <ul id="userList">
+
+            </ul>
+
+        </div>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyADWtnafe43uTiHX24tsoJUaib_ToZsgmA",
+    authDomain: "activity-964f0.firebaseapp.com",
+    projectId: "activity-964f0",
+    storageBucket: "activity-964f0.appspot.com",
+    messagingSenderId: "700531947614",
+    appId: "1:700531947614:web:d56d01e3912e91c78d9ccf",
+    measurementId: "G-LNV89M9JBF"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.firestore();
+</script>
+<script src="index.js"></script>
+    </body>
+</html>
