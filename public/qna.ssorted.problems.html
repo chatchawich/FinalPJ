@@ -28,6 +28,24 @@
     <!--Get your own code at fontawesome.com-->
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+    <style>
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        ul {
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(100, 7, 7, 0.1);
+        }
+        span {
+            display: block;
+        }
+    
+    </style>
 
 </head>
 <body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
@@ -115,97 +133,55 @@
 
 <!-- Features Section-->
 <section id="gtco-features" class="bg-white">
-
-    <h3 align = 'right'>
-        <div id="login_div" class="main-div">
-        </div>
-        <div id="user_div" class="loggedin-div">
-            <p id="user_para"></p>
-        </div>
-    </h3>
-
     <div class="container">
         <div class="section-content">
 
             <div id="toppic_left">
+                    <center><div class="container" >
+                      <div  style="border: medium none; background:rgb(69, 129, 163) none repeat scroll 0% 0%; width: 450px; height: auto; text-align: center;">
+                        <h1>Report</h1>
+                        <form id="addreport">
+                            <b><p>รายงานปัญหา :</p></b>
+                            <input type="text" name="report" size="30%"  placeholder="add report" style="border: 3px black solid">
+                            <b><p>ช่องทางการติดต่อ :</p></b>
+                            <input type="text" name="name" size="30%"  placeholder="add email" style="border: 3px black solid">
+                            <center><br><button>Add</button></center>
+                            
+            
+                        </form></div></div></center>
+            
+            
+                    <ul id ="userList">
+            
+                    </ul>
+            
+                    
 
-                <input name="" type="button" class="btn btn-primary bt_new_toppic" value="+ ตั้งหัวข้อใหม่" onclick="new_toppic();"><br><br>
-                <div style="margin:10px;">ข้อมูลทั้งหมด 227 ข้อมูล &nbsp; &nbsp;  &nbsp;
-                    <span style="word-spacing: 10px;"> 
-                        <b><span class="int current">1</span></b> 
-                        <a href="/?q=webboard&amp;page=2"><span class="int"><b>2</b></span></a> 
-                        <a href="/?q=webboard&amp;page=3"><span class="int"><b>3</b></span></a> 
-                        <a href="/?q=webboard&amp;page=4"><span class="int"><b>4</b></span></a> 
-                        <a href="/?q=webboard&amp;page=5"><span class="int"><b>5</b></span></a> 
-                        <a href="/?q=webboard&amp;page=6"><span class="int"><b>6</b></span></a> 
-                        <a href="/?q=webboard&amp;page=7"><span class="int"><b>7</b></span></a> 
-                        <a href="/?q=webboard&amp;page=8"><span class="int"><b>8</b></span></a> 
-                        <a href="/?q=webboard&amp;page=9"><span class="int"><b>9</b></span></a> 
-                        <a href="/?q=webboard&amp;page=10"><span class="int"><b>10</b></span></a> 
-                        <a href="/?q=webboard&amp;page=11"><span class="int"><b>11</b></span></a>
-                    </span> ...  &nbsp;&nbsp;&nbsp;
-                    <a href="/?q=webboard&amp;page=2#submit_page">ถัดไป »</a> |  
-                    <a href="/?q=webboard&amp;page=12#submit_page">หน้าสุดท้าย</a></div>
-
-                
-                <div id="all_toppic">
-                    <ul>
-                        <li>
-                            <div class="text_topic">
-                                <a href="/?q=webboard&amp;n=794" class="attopic">ทำเรื่องโอนทรานสคริป Y2 ที่เหลือ ให้เป็น Y3 ได้ไหมคะ</a>
-                                    <span class="time" title="พุธ 28 ตุลาคม 2563, 20:44 น."> · 28 ต.ค.  20:44</span></div>
-                                    <span class="atuser" title="รหัส60">รหัส60</span>
-                                    <span class="athits" title="เข้าชม 35 ครั้ง">35</span>
-                                    <span class="atcomment">0</span></li><li><div class="text_topic">
-                                <a href="/?q=webboard&amp;n=791" class="attopic">(ปี4)ทรานสคริปต์ปลดล็อค Y3 ยังไม่เข้า</a>
-                                    <span class="time" title="ศุกร์ 23 ตุลาคม 2563, 02:07 น."> · 23 ต.ค.  02:07</span></div>
-                                    <span class="atuser" title="ปี 4">ปี 4</span>
-                                    <span class="athits" title="เข้าชม 57 ครั้ง">57</span>
-                                    <span class="atcomment">0</span></li><li><div class="text_topic">
-                                <a href="/?q=webboard&amp;n=786" class="attopic">กิจกรรมบังคับ</a>
-                                    <span class="time" title="ศุกร์ 25 กันยายน 2563, 10:21 น."> · 25 ก.ย.  10:21</span></div>
-                                    <span class="atuser" title="นิรนาม">นิรนาม</span>
-                                    <span class="athits" title="เข้าชม 178 ครั้ง">178</span>
-                                    <span class="atcomment">0</span></li><li><div class="text_topic">
-                                <a href="/?q=webboard&amp;n=784" class="attopic">เพราะอะไรถึงมีการบังคับเก็บกิจกรรมทรานสคริปเกิดขึ้น</a>
-                                    <span class="time" title="เสาร์ 19 กันยายน 2563, 15:46 น."> · 19 ก.ย.  15:46</span></div>
-                                    <span class="atuser" title="6210110560">6210110560</span>
-                                    <span class="athits" title="เข้าชม 203 ครั้ง">203</span>
-                                    <span class="atcomment">0</span></li><li><div class="text_topic">
-                                <a href="/?q=webboard&amp;n=783" class="attopic">ทรานสคริปเก็บข้ามชั้นปีได้ไหมคะ</a>
-                                    <span class="time" title="พฤหัสบดี 17 กันยายน 2563, 19:04 น."> · 17 ก.ย.  19:04</span></div>
-                                    <span class="atuser" title="น้องปี1">น้องปี1</span>
-                                    <span class="athits" title="เข้าชม 145 ครั้ง">145</span>
-                                    <span class="atcomment">0</span></li><li><div class="text_topic">
-                                <a href="/?q=webboard&amp;n=768" class="attopic">ตอนปี 3 ไปทำ Y2 มาครบแล้วค่ะ พอมาเช็คตอนอยู่ ปี 4 ปรากฏว่ายังไม่เข้า</a>
-                                    <span class="time" title="พุธ 12 สิงหาคม 2563, 15:52 น."> · 12 ส.ค.  15:52</span></div>
-                                    <span class="atuser" title="บัญชี">บัญชี</span>
-                                    <span class="athits" title="เข้าชม 300 ครั้ง">300</span>
-                                    <span class="atcomment">4</span></li><li><div class="text_topic"></div>
-                            </div>
-                        </ul>
-                    </li>
-                </div>
-                
-        <div style="margin:10px;">ข้อมูลทั้งหมด 227 ข้อมูล &nbsp; &nbsp;  &nbsp;
-            <span style="word-spacing: 10px;"> <b>
-                <span class="int current">1</span></b> 
-                <a href="/?q=webboard&amp;page=2"><
-                    span class="int"><b>2</b></span></a> 
-                    <a href="/?q=webboard&amp;page=3"><span class="int"><b>3</b></span></a> 
-                    <a href="/?q=webboard&amp;page=4"><span class="int"><b>4</b></span></a> 
-                    <a href="/?q=webboard&amp;page=5"><span class="int"><b>5</b></span></a> 
-                    <a href="/?q=webboard&amp;page=6"><span class="int"><b>6</b></span></a> 
-                    <a href="/?q=webboard&amp;page=7"><span class="int"><b>7</b></span></a>
-                    <a href="/?q=webboard&amp;page=8"><span class="int"><b>8</b></span></a> 
-                    <a href="/?q=webboard&amp;page=9"><span class="int"><b>9</b></span></a> 
-                    <a href="/?q=webboard&amp;page=10"><span class="int"><b>10</b></span></a> 
-                    <a href="/?q=webboard&amp;page=11"><span class="int"><b>11</b></span></a>
-                </span> ...  &nbsp;&nbsp;&nbsp;
-                <a href="/?q=webboard&amp;page=2#submit_page">ถัดไป »</a> |  
-                <a href="/?q=webboard&amp;page=12#submit_page">หน้าสุดท้าย</a></div>
                 
         </div>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyD-dV8BHMQkjgslHZ8N0kxcByclC3IzV9k",
+    authDomain: "report-firebase.firebaseapp.com",
+    projectId: "report-firebase",
+    storageBucket: "report-firebase.appspot.com",
+    messagingSenderId: "477543956964",
+    appId: "1:477543956964:web:f51ab19dccb16edc6ec7f1",
+    measurementId: "G-26CQ0ELMFN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.firestore();
+</script>
+<script src="addreport.js"></script>
+    </body>
 	
 <footer class="mastfoot mb-3 bg-white py-4 border-top">
     <div class="inner container">
@@ -234,26 +210,7 @@
         </div>
     </div>
 </footer>	</div>
-    
-    <!--Google firebasejs-->
-    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-    <script>
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    var firebaseConfig = {
-        apiKey: "AIzaSyCEPLlbn9OxnqFJrxzu6xy-f8w6td0ddjo",
-        authDomain: "sdt-psu-f1194.firebaseapp.com",
-        projectId: "sdt-psu-f1194",
-        storageBucket: "sdt-psu-f1194.appspot.com",
-        messagingSenderId: "250396603418",
-        appId: "1:250396603418:web:63c56dd1f7deb0eb560da3",
-        measurementId: "G-YN7HK3G4PB"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    </script>
-    <script src="./js/login.js"></script>
-
+	
 </div>
 	<!-- External JS -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
